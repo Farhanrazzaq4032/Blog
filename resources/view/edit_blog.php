@@ -23,7 +23,7 @@ use App\Controller\Blog;
                 <input class="file-inp" id="fileupl" type="file" name="image" value="<?php echo $data[0]['image']; ?>">
                 <label class="blog-upload" for="fileupl">Upload File</label>
                 <div>
-                <img width="100px" height="100px" src="resources/uploads/<?= $data[0]['image']; ?>" alt="images">
+                <img width="100%" height="200px" src="resources/uploads/<?= $data[0]['image']; ?>" alt="images">
 
                 </div>
             </div>
