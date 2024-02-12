@@ -1,0 +1,124 @@
+.login-main {
+    width: 400px;
+    height: 380px;
+    border-radius: 5px;
+    position: absolute;
+    top: 127px;
+    left: 33%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(228, 228, 237, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(179, 225, 241, 1) 0%, rgba(214, 227, 238, 1) 74%);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.logo-text {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: rgba(75, 75, 219, 0.863);
+    color: rgba(110, 78, 255, 0.863);
+}
+
+.login-design {
+    text-align: center;
+
+}
+
+.login-text {
+
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(44, 44, 54);
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form .login-input {
+    border-color: aliceblue;
+    border-radius: 6px;
+    padding: 14px 16px;
+    width: 330px;
+    height: 15px;
+    font-size: 16px;
+}
+
+.login-form .login-input:focus {
+    outline: none;
+}
+
+
+.login-email {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.login-input:hover {
+    border-top: 3px solid rgb(35, 113, 231);
+    transition: 1s;
+}
+
+.login-btn {
+    background: linear-gradient(273deg, rgba(2, 0, 36, 1) 0%, rgba(9, 56, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: rgb(240, 238, 238);
+    font-size: 20px;
+    padding: 2px;
+    text-align: center;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+    margin-top: 30px;
+    height: 50px;
+    width: 330px;
+    border: solid 3px rgba(9, 56, 121, 1);
+    border-color: aliceblue;
+
+}
+
+
+
+.login-btn:hover {
+    background: rgb(2, 0, 36);
+    transition: 1s;
+    border: solid 3px rgba(9, 56, 121, 1);
+    color: white;
+    border-radius: 10px;
+    font-size: 21px;
+    border-color: aliceblue;
+}
+
+.login-form .forget {
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.login-form .forget a {
+    color: black;
+    text-decoration: none;
+}
+
+.create-account {
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.singup {
+    margin-left: 5px;
+
+}
+
+.create-account:hover {
+    border-bottom: 2px solid rgb(117, 102, 230);
+    border-radius: 10px;
+
+}
+
+.login-form .singup:hover {
+    text-decoration: underline;
+}

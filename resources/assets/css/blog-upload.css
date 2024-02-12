@@ -1,0 +1,101 @@
+
+#blog-ulf{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(246, 247, 248);
+}
+.mt{
+    margin-top: 20px;
+}
+.mt-s{
+    margin-top: 5px;
+}
+
+.blog-form{
+    width: 600px;
+    padding: 1em;
+    margin: 0 auto;
+
+}
+
+.blog-inp{
+    border: 1px solid rgb(168, 172, 168);
+    padding: 1em;
+    border-radius: 4px;
+    width: 69%;
+
+}
+.blog-inp:focus{
+    outline: none;
+    border: 1px solid rgb(123, 201, 253);
+    transition: .5s;
+
+}
+.blog-inp::placeholder{
+    color: rgb(168, 172, 168);  
+
+
+}
+
+.blog-img-lab{
+    display: block;
+    color:  rgb(32, 32, 32);
+    font-weight: 600;
+
+}
+.img-des{
+    display: block;
+    color:  rgb(146, 150, 146);
+    font-size: 13px;
+}
+.blog-file{
+    border: 1px dotted rgb(146, 150, 146);
+    width: 73%;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.blog-file:hover{
+    background-color: rgba(37, 29, 29, 0.137);
+    transition: .5s;
+    border: 1px dotted rgb(123, 201, 253);
+
+}
+.file-inp{
+    opacity: 1;
+    padding: 2px;
+}
+.blog-file .blog-upload{
+    display: inline-block;
+    padding: 30px 204px 40px 150px;
+    cursor: pointer;
+
+
+}
+.blog-dec-lab{
+    display: block;
+}
+
+.blog-text{
+    width: 69%;
+    border: 1px solid rgb(146, 150, 146);
+    resize: none;
+}
+.blog-btn{
+    width: 69%;
+    text-align: center;
+}
+.blog-btn .btn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(52, 92, 223, 0.952);
+    width: 100px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+.blog-btn .btn:hover{
+    background-color: rgba(85, 119, 231, 0.952);
+}
+
+

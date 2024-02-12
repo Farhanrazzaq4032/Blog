@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+.nav-header{
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: rgb(189 195 196);
+    border-radius: 1px;
+}
+.nav-header .logo{
+    margin-right: auto;
+    background: #5b5555;
+    border-radius: 10px;
+
+}
+.nav_link a{
+    text-decoration: none;
+    font-size: 20px;
+    color: beige;
+    padding: 1px;
+}
+.nav_bar .nav_link{
+    list-style: none;
+    display: flex;
+
+}
+.nav_link a{
+    padding: 0px 20px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+
+   
+}
+.nav_link .menuBtn:hover{
+    color: rgb(231, 230, 230);
+  
+    transition: .4s;
+    
+
+}
+.blog-logoutBtn{
+    background-color: rgb(127, 163, 211);
+}
+.blog-logoutBtn:hover{
+    background-color: rgb(149, 178, 216);
+}
+.nav_link li a{
+    position: relative;
+    color:white;
+
+}
