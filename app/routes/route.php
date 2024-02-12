@@ -13,3 +13,5 @@ Router::post('save-post', 'Blog', 'userPost');
 Router::get('post-edit', 'Blog', 'edit');
 Router::get('post-delete', 'Blog', 'delete');
 Router::post('update-post', 'Blog', 'updatePost');
+//register route
+Router::get('register', 'Register', 'index');

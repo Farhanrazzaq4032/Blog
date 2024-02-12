@@ -8,5 +8,6 @@
     <link rel="stylesheet" href="resources/assets/css/login.css">
     <link rel="stylesheet" href="resources/assets/css/blog.css">
     <link rel="stylesheet" href="resources/assets/css/blog-upload.css">
+    <link rel="stylesheet" href="resources/assets/css/register.css">
     <title>Blog</title>
 </head>

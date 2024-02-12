@@ -10,7 +10,7 @@
             <input class="login-input login-password" placeholder="Passworld" type="password" name="password"><br>
             <button type="submit" class="login-btn">Log In</button> 
             <div class="forget">
-                <a class="create-account" href="">Create new Account</a>
+                <a class="create-account" href="register">Create new Account</a>
             </div>
         </form>
     </div>

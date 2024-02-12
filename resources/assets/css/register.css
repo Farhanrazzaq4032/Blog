@@ -1,0 +1,72 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#blog-reg{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: rgb(187, 213, 235); */
+}
+.form-reg-name{
+    margin-left: 160px;
+    color: rgb(57, 60, 247);
+}
+.blog-reg-form .mt{
+    margin-top: 20px;
+}
+.blog-reg-form .mt-s{
+    margin-top: 5px;
+}
+
+.blog-reg-form{
+    background-color: rgb(196, 203, 209);
+    width: 500px;
+    padding: 1em;
+    margin: 0 auto;
+    border-radius: 5px;
+
+}
+
+.blog-reg-form .flname{
+    display: flex;
+    gap: 1.5em;
+    flex-direction: row;
+}
+.blog-reg-form .name-inp{
+    border: none;
+    border: 1px solid rgb(29, 151, 151);
+    padding: 1em;
+    border-radius: 4px;
+    width: 290px;
+}
+.blog-reg-form .email-inp{
+    border: none;
+    border: 1px solid rgb(29, 151, 151);
+    padding: 1em;
+    border-radius: 4px;
+    width: 95%;
+}
+
+.blog-reg-inp:focus{
+    outline: none;
+    border: 1px solid rgb(123, 201, 253);
+    transition: .5s;
+}
+
+.blog-reg-inp::placeholder{
+    color: rgb(82, 161, 82);  
+}
+
+.blog-reg-form .reg-btn{
+    padding: 7px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(56, 139, 211);
+    color: #ffff;
+    cursor: pointer;
+}
+.blog-reg-form .reg-btn:hover{
+    background-color: rgb(72, 152, 223);
+    transition: .5s;
+}
+
+
