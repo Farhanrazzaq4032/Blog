@@ -2,31 +2,31 @@
 
 namespace App\Services;
 
-use App\Controller\Auth;
 
 class Router
 {
     private static $routes = [];
     private static $controllerNameSpace = 'App\Controller\\';
 
-    public static function getRoutes($uri, $controller, $action, $method = 'GET')
+    public static function getRoutes($uri, $controller, $action, $method, $middleware = [] )
     {
 
         self::$routes[] = [
             'uri' => '/' . $uri,
             'controller' => $controller,
             'action' => $action,
-            'method' => $method
+            'method' => $method,
+            'middleware' => $middleware
         ];
     }
 
-    static function get($uri, $controller, $action)
+    static function get($uri, $controller, $action,$middleware = [] )
     {
-        self::getRoutes($uri, $controller, $action, 'GET');
+        self::getRoutes($uri, $controller, $action, 'GET', $middleware);
     }
-    static function post($uri, $controller, $action)
+    static function post($uri, $controller, $action, $middleware = [] )
     {
-        self::getRoutes($uri, $controller, $action, 'POST');
+        self::getRoutes($uri, $controller, $action, 'POST', $middleware);
     }
 
 
@@ -46,21 +46,16 @@ class Router
         $requestMethod = $_SERVER['REQUEST_METHOD'];
         foreach (self::$routes as $route) {
             if ($route['uri'] === $cleanURI && $route['method'] == $requestMethod) {
-                $auth = new Auth();
+                foreach ($route['middleware'] as $middleware) {
+                    $middlewareClass = new $middleware;
+                    $middlewareClass->handle();
+                }
+
                 $cotrollerClass = self::$controllerNameSpace . $route['controller'];
                 $action = $route['action'];
                 $controller = new $cotrollerClass();
-                if ($cleanURI == '/login' or $cleanURI == '/login-submit') {
-                    $controller->$action();
-                    return;
-                } else {
-                    if ($auth->auth()) {
-                        $controller->$action();
-                        return;
-                    } else {
-                        redirect('login');
-                    }
-                }
+                $controller->$action();
+                return;
             }
         }
         view("error", "404");

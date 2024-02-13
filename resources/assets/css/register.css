@@ -5,6 +5,7 @@
 #blog-reg{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* background-color: rgb(187, 213, 235); */
+    
 }
 .form-reg-name{
     margin-left: 160px;
@@ -23,6 +24,7 @@
     padding: 1em;
     margin: 0 auto;
     border-radius: 5px;
+    margin-top: 20px;
 
 }
 

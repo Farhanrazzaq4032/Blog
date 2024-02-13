@@ -13,6 +13,14 @@ class User extends ModelDB
     public $name;
 
 
+
+    function register($fname, $lname, $email, $password){
+    $db = new DB();
+    $query = "INSERT INTO $this->table (fname, lname, email, password) VALUE ('$fname', '$lname', '$email', '$password')";
+    $this->insert($query);   
+
+    }
+
     function login($email, $password)
     {
         $db = new DB();

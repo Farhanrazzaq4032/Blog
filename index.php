@@ -1,5 +1,8 @@
 <?php
 session_start();
+//password strong
+define("SALT", "kjdfkfdgj");
+
 //Directory Path
 define("BASE_PATH" , __DIR__."/");
 

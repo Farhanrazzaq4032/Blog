@@ -8,20 +8,15 @@ use App\Controller\Auth;
 class Login
 {
 
-    function index()
-    {
-        $auth = new Auth();
-        if ($auth->auth()) {
-            redirect("dashboard");
-        } else {
-            view("view", "login");
-        }
+    function index(){
+        view("view", "login");
+
     }
 
     function loginBtn()
     {
         $email = cleanString($_POST["email"]);
-        $password = cleanString($_POST["password"]);
+        $password = get_hashPass(cleanString($_POST["password"]));
         if ($email !== "" && $password !== "") {
             $user = new User();
             if ($user->login($email, $password)) {
