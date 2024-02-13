@@ -17,10 +17,11 @@ class Register {
             $fname = cleanString($_POST['fname']);
             $lname = cleanString($_POST['lname']);
             $email = cleanString($_POST['email']);
-            $password = get_hashPass(cleanString($_POST['pass']));
-            $confPassword = get_hashPass(cleanString($_POST['passconf']));
+            $password = cleanString($_POST['pass']);
+            $confPassword = cleanString($_POST['passconf']);
             if($fname !== ''&& $lname !== '' && $email !== ''&& $password !== ''&& $confPassword !== ''){
                 if($password == $confPassword){
+                    $password = get_hashPass($password);
                     $user->register($fname, $lname, $email, $password);
                     setMsg('User Successfull Registerd');
                     redirect('login');

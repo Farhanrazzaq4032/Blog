@@ -1,4 +1,3 @@
-<?php view("tamp", "header"); ?>
 
 <section id="blog-reg">
     <form class="blog-reg-form" action="user-register" method="post">
@@ -21,4 +20,3 @@
     </form>
 </section>
 
-<?php view("tamp", "footer"); ?>
