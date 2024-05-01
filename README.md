@@ -1,2 +1,2 @@
 # Blog
-Make is Project in MVC Pattern 
+Follow MVC pattern
